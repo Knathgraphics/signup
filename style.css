@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: poppins;
+}
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("./assets/bg-intro-desktop.png");
+    background-position: center;
+    background-size: cover;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:5vw;
+}
+.caption{
+    width: 40vw;
+    color: white;
+    margin-right: 30px;
+    h1{
+        font-size: 30pt;
+        line-height: 45px;
+    }
+}
+
+.try{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 15px;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.148);
+}
+.form{
+    width: 32vw;
+}
+input:focus{
+    border: 1.2px solid hsl(248, 32%, 49%);
+
+}
+input{
+    padding: 13px 20px;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    border: 1.2px solid rgba(128, 128, 128, 0.637);
+    margin-bottom: 10px;
+}
+input::placeholder{
+    font-size: 13px;
+    font-weight: 600;
+    color:rgba(128, 128, 128, 0.71);
+}
+
+form{
+    background-color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    padding:40px;
+    border-radius: 10px;
+    p{
+        color: rgba(128, 128, 128, 0.822);
+        font-weight: 500;
+        font-size: 7pt;
+    }
+    a{
+        text-decoration: none;
+        color: hsl(0, 100%, 74%) ;
+        font-weight: bold;
+    }
+}
+form button{
+    background-color:  hsl(154, 59%, 51%);
+    text-align: center;
+    padding: 1vw 2vw;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+    box-shadow:0px 3.5px 0px hsl(154, 58%, 47%);
+}
+
+@media (max-width:700px) {
+    body{
+        background-image: url("./assets/bg-intro-mobile.png");
+    }
+    .container{
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+        display: flex;
+        
+    }
+    .form{
+        width: 80vw;
+        margin-top: 40px;
+    }
+    .caption{
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto;
+        h1{
+            font-size: 20pt;
+            line-height: 30px;
+        }
+    }
+}
